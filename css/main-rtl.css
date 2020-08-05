@@ -1,0 +1,92 @@
+* {
+  text-align: right;
+}
+
+.top-bar .topbar-right .search-form .submit-btn {
+  left: 2px;
+  right: unset;
+}
+.top-bar .topbar-right .socialmedia {
+  border-right: 1px solid #E4E4E4;
+  border-left: none;
+}
+
+.nav-item .dropdown {
+  left: 0;
+}
+
+.burger {
+  right: unset;
+  left: 16px;
+}
+
+.about-us .certificate-slider {
+  direction: ltr;
+}
+
+.happy-clients .section-title .custom-navs {
+  left: 0;
+  right: unset;
+  direction: ltr;
+}
+
+.our-team .section-title .custom-navs {
+  left: 0;
+  right: unset;
+  direction: ltr;
+}
+
+.our-team .team-wrap .team-info {
+  text-align: center;
+}
+.our-team .team-wrap .team-info span {
+  text-align: center;
+}
+
+.why-us .side-wrapper .cert-slider .custom-navs {
+  direction: ltr;
+}
+.why-us .side-wrapper .cert-slider .custom-navs a {
+  text-align: center;
+}
+
+.testimonials .client-wrap .client-info span {
+  text-align: center;
+}
+
+.loadMore {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+.loadMore a {
+  background-color: #fff;
+  border: 2px solid #18afd3;
+  padding: 10px 30px;
+  outline: 2px solid #18afd3;
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: #18afd3;
+}
+.loadMore a:hover {
+  outline: 2px solid #18afd3;
+  outline-offset: 5px;
+  text-decoration: none;
+}
+
+.single-header .post-title .post-info small {
+  color: #fff;
+}
+.single-header .post-title .post-info small .comments-num {
+  color: #fff;
+}
+
+.price-list-section .price-header .navigator {
+  padding: 0;
+}
+.price-list-section .price-header .navigator .tabs h3 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main-rtl.css.map */

@@ -1,0 +1,519 @@
+// all owl carousel styles is here !! 
+.slider-carousel {
+    position: relative;
+
+    .owl-custom-direction {
+        a {
+            font-size: 2.5rem;
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            background-color: #18afd3;
+            color: #fff;
+            padding: 10px 25px;
+
+            &:hover {
+                background-color: #fff;
+                color: $gcolor;
+            }
+        }
+
+        .custom-prev {
+            left: 0;
+        }
+
+        .custom-next {
+            right: 0;
+        }
+    }
+}
+
+.slide-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .background-info {
+        background: transparent;
+        height: 80vh;
+
+        h3 {
+            padding: 100px 0 20px;
+            color: #fff;
+            font-size: 3rem;
+            width: 50%;
+            animation: fadeInDown 500ms;
+        }
+
+        span {
+            width: 50%;
+            display: block;
+            color: #efefef;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: block;
+            background-color: #4c6575;
+            width: 16%;
+            margin-top: 25px;
+            color: #fff;
+            padding: 15px;
+            border-radius: 33px;
+            text-align: center;
+            @include transitionMe(background .3s ease);
+
+            &:hover {
+                background-color: #f57e57;
+            }
+        }
+    }
+
+}
+
+.about-us {
+    .certificate-slider {
+        background-color: #f6f6f6;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        @include rotateMe(90deg);
+        transform: rotate(90deg);
+        margin-bottom: 0;
+        width: 602px;
+        text-align: center;
+        top: 113px;
+        right: -12px;
+
+        h3 {
+            font-family: nunito;
+            position: relative;
+            font-size: 1.4rem;
+            left: 88px;
+            text-transform: none;
+            padding-top: 32px;
+            margin-bottom: 11px;
+            @include rotateMe(-90deg);
+            transform: rotate(-90deg);
+        }
+
+        #certifications {
+            padding: 0 0 0 26px;
+            margin: 0;
+            height: 296px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+            .item {
+                @include rotateMe(-90deg);
+
+                img {
+                    text-align: center;
+                }
+            }
+        }
+
+        .custom-navs {
+            a {
+                position: absolute;
+                color: #ccc;
+                font-size: 19px;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid;
+                top: 14px;
+                line-height: 35px;
+                z-index: 5;
+                @include rotateMe(-90deg);
+
+                &:hover {
+                    color: $gcolor;
+                }
+            }
+
+            .custom-up {
+                left: 43%;
+            }
+
+            .custom-down {
+                left: 52%;
+            }
+        }
+    }
+}
+
+// success story styles 
+.success-story {
+    padding: 5em 0;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        color: #646464;
+        letter-spacing: 0.052em;
+    }
+
+    .imgs-container {
+        padding-bottom: 2.4em;
+
+        .img-container {
+            display: inline-block;
+            border: 1px solid #e1e1e1;
+            padding: 10px;
+            background: #fff;
+            position: relative;
+
+            &.after {
+                margin-left: -74px;
+                top: 48px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                padding: 18px 0 0;
+                text-align: center;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .story-content {
+        .story-title {
+            font-weight: 500;
+            color: #646464;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #444444;
+        }
+        .stages-wrap {
+            h5 {
+                font-weight: 400;
+                color: #646464;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 20px;
+                    font-size: 1.2rem;
+                    color: #444444;
+                    i {
+                        font-size: 1.4rem;
+                        margin-right: 5px;
+                        color: #f57e57;
+                    }
+                }
+            }
+        }
+    }
+    .owl-theme .owl-dots {
+        .owl-dot {
+            span {
+                background-color: #fff;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #f57e57;
+            }
+            &.active {
+                span {
+                    background-color: #f57e57;
+
+                }
+            }
+        }
+    }
+
+}
+
+// our happy clients wrapper 
+.happy-clients {
+    padding: 4em 0;
+    background-color: #eaeaea;
+    .section-title {
+        margin-bottom: 4em;
+        position: relative;
+        h2 {
+            font-size: 3rem;
+        }
+        .custom-navs {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 32px;
+            a {
+                margin: 0 0px;
+                background-color: #fff;
+                width: 55px;
+                display: inline-block;
+                height: 55px;
+                text-align: center;
+                border-radius: 50%;
+                line-height: 55px;
+                border: 1px solid #ccc;
+                &:hover {
+                    color: #fff;
+                    background-color: $gcolor;
+                }
+            }
+        }
+    }
+    .client-wrap {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 50px;
+        @include transitionMe(all .3s ease);
+        p {
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+        .icon {
+            font-size: 1.5rem;
+            @include transitionMe(color .3s ease);
+        }
+        .client-info {
+            text-align: center;
+            span {
+                display: block;
+            }
+            .name {
+                font-weight: 700;
+            }
+            .client-job {
+                color: rgb(99, 99, 99);
+            }
+        }
+        &:hover{
+            border-color: $gcolor;
+            .icon {
+                color: $gcolor;
+            }
+        }
+    }
+}
+
+// our team section's styles 
+.our-team {
+    background-color: #f57e57;
+    padding: 4em 0;
+    .section-title {
+        margin-bottom: 4em;
+        position: relative;
+        h2 {
+            font-size: 3rem;
+            color: #fff;
+        }
+        .custom-navs {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 32px;
+            a {
+                background-color: transparent;
+                width: 55px;
+                display: inline-block;
+                height: 55px;
+                text-align: center;
+                border-radius: 50%;
+                line-height: 55px;
+                border: 1px solid #fff;
+                color: #fff;
+                font-size: 1.1rem;
+                &:hover {
+                    background-color: #fff;
+                    color: #f57e57;
+                }
+            }
+        }
+    }
+    .team-wrap {
+        a {
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .team-info {
+            color: #fff;
+            text-align: center;
+            span {
+                display: block;
+            }
+            .name {
+                font-weight: 700;
+            }
+            .job {
+                color: #cfcece;
+            }
+        }
+    }
+    #popup {
+        display: none;
+        width: 39%;
+        @include transitionMe(all .3s ease);
+    }
+
+}
+.fancybox-stage {
+    .fancybox-slide {
+        .popup-info-wrap {
+            width: 40%;
+            padding-right: 0;
+            padding-left: 0;
+            .popup-info {
+                .social-info {
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    justify-content: space-between;
+                    .pic {
+                        margin: 29px;
+                    }
+                    figcaption {
+                        display: inline-block;
+                        margin-left: 40px;
+                        span {
+                            display: block;
+                        }
+                        .name {
+                            font-weight: 700;
+                        }
+                        .job {
+                            color: #cfcece;
+                        }
+                    }
+                    .social-media {
+                        border-left: 1px solid #ccc;
+                        a {
+                            display: block;
+                            font-size: 2rem;
+                            padding: 12px;
+                            color:#636363;
+                            border-bottom: 1px solid #ccc;
+                            @include transitionMe(color .3s ease);
+                            &.border-none {
+                                border-bottom: none;
+                            }
+                            &:hover {
+                                color: $gcolor;
+                            }
+                        }
+                    }
+                }
+                .career {
+                    padding: 2em;
+                    color: #636363;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-tablet) {
+    .slide-background {
+        padding-bottom: 95px;
+        .background-info {
+            h3 {
+                padding: 29px 0 7px;
+            }
+            .btn {
+                width: 50%;
+            }
+        } 
+    }
+    .about-us {
+        .certificate-slider {
+            top: 178px;
+            right: 172px;
+            width: 250%;
+            margin-right: 0;
+            height: 240px;
+            h3 {
+                padding-top: 0;
+            }
+            #certifications {
+                height: 227px;
+            }
+        }
+        .about-wrapper {
+            .about-us-info {
+                padding-bottom: 4rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .success-story {
+        .imgs-container {
+            display: flex;
+        }
+    }
+    .happy-clients .section-title .custom-navs {
+        margin-top: 60px;
+    }
+    .slider-carousel .owl-custom-direction a {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+}
+
+@media(max-width: $breakpoint-mobile) {
+    .slide-background {
+        padding-bottom: 95px;
+        .background-info {
+            h3 {
+                padding: 29px 0 7px;
+            }
+            .btn {
+                width: 50%;
+            }
+        } 
+    }
+    .about-us {
+        .certificate-slider {
+            top: 0;
+            right: 192px;
+            width: 200%;
+            margin-right: 0;
+            height: 411px;
+            h3 {
+                padding-top: 92px;
+            }
+            #certifications {
+                height: 380px;
+            }
+        }
+        .about-wrapper {
+            .about-us-info {
+                padding-bottom: 4rem;
+            }
+        }
+    }
+    .success-story {
+        .imgs-container {
+            display: flex;
+        }
+    }
+    .happy-clients .section-title .custom-navs {
+        margin-top: 60px;
+    }
+    .slider-carousel .owl-custom-direction a {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+}
+
